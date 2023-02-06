@@ -1,6 +1,7 @@
 # chatbot
 # 2023-01-19
 # pcampbell
+
 #Ask the user their name.
 name = input("what is your name")
 # Greet the user by name and ask where they live.
@@ -13,6 +14,4 @@ print("Oh !! ", name, " I always wanted to visit ", home)
 print('where do you work ', name, "?")
 work = input()
 print("Working at ", work, "must be exciting, ",name, "!")
-#Remember
- to use the user's name in all responses for maximum creepiness!​
-Footer
+#Remember  to use the user's name in all responses for maximum creepiness!
