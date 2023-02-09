@@ -32,7 +32,7 @@ celsius = convert_celsius(-5.8)
 print(f' -5.8\u00B0F is {celsius}\u00B0C ')
 ```
 
-### variables inside a function are not available outside
+### parameter values are copies of the argument (cannot change them for the calling program)
 ```
 def func(a,b,c):
   c = abs(c)
@@ -42,5 +42,5 @@ x = 5
 y = 8
 z = -10
 q = func(x,y,z)
-# z is still - 10 !!
+# what is the value of z ?
 ```
