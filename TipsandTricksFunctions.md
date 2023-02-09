@@ -30,3 +30,17 @@ print(convert_celsius(10))
 # not the same as the one in convert_celsius
 celsius = convert_celsius(-5.8)
 print(f' -5.8\u00B0F is {celsius}\u00B0C ')
+```
+
+### variables inside a function are not available outside
+```
+def func(a,b,c):
+  c = abs(c)
+  return a**2 + b - c
+  
+x = 5
+y = 8
+z = -10
+q = func(x,y,z)
+# z is still - 10 !!
+```
