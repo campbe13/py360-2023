@@ -4,9 +4,14 @@ teaching Introductory Python to Science students
 
 * [Code examples, done together in class](examples)
 * [Labs done by students, my solution](solutions)
+* [IDE & Python general tips & tricks](TipsandTricks.md)
+* [Functions in Python tips & tricks](TipsandTricksFunctions.md)
+* [Style Guide](PyStyleGuide.md)
 ---
 You can read the files directly from the git server interface,  you can copy them individually, 
-use the raw format if you do so. Or you can download everything, on the main page there is a button to download as a zip file: ![image](https://user-images.githubusercontent.com/1751207/149207755-39ce3c9e-033b-4309-8014-55cf0588ed05.png)
+use the raw format if you do so. 
+
+Or you can download everything, on the main page there is a button to download as a zip file: ![image](https://user-images.githubusercontent.com/1751207/149207755-39ce3c9e-033b-4309-8014-55cf0588ed05.png)
 
 ## Dev set up
 ### use repl.it
