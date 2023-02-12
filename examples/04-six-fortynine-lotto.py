@@ -16,7 +16,12 @@ pick4 = random.randint(1,49)
 pick5 = random.randint(1,49)
 pick6 = random.randint(1,49)
 
-# bonus number
-bonus = random.randint(1,49)
-
-print(f"Winning numbers: {pick1} {pick2} {pick3} {pick4} {pick5} {pick6} bonus {bonus}")
+# check if user wants a bonus number
+# https://loteries.lotoquebec.com/en/lotteries/lotto-6-49
+answer = input("Do you want an extra? ")
+if answer == 'y':
+  # bonus number (extra)
+  bonus = random.randint(1,49)
+  print(f"Winning numbers: {pick1} {pick2} {pick3} {pick4} {pick5} {pick6} bonus {bonus}")
+else: 
+  print(f"Winning numbers: {pick1} {pick2} {pick3} {pick4} {pick5} {pick6} no extra")
