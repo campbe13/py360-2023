@@ -1,6 +1,6 @@
 # Functions
 ## Some gotchas
-Functions are isolated blocks of code designed to be
+Functions are isolated blocks of code designed to be single use
 ### they must be defined before they are used
 ```
 #  Error, the interpreter has not "seen" convert_celsuis when it looks at this line of code
@@ -43,4 +43,25 @@ y = 8
 z = -10
 q = func(x,y,z)
 # what is the value of z ?
+```
+### any statement after a return is NEVER executed, if it's part of the code block
+```
+def func(a,b,c):
+  result = a**2 + b - c
+  return result
+  print ("testing")   # <<<< never reached!
+  print (result)    # <<<<< never reached!
+  
+print(10,4,5 "func ", func(10,4,5))
+# what is displayed?
+```
+versus
+```
+def func(a,b,c):
+  result = a**2 + b - c
+  return result
+print ("testing")  
+ 
+print(10,4,5 "func ", func(10,4,5))
+# what is displayed?
 ```
