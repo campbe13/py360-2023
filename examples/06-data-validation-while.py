@@ -33,6 +33,8 @@ NOT within the range 15-85
 stays inside the loop until OUTSIDE the range
 '''
 
+# challenge, can you change this to use and to ensure the number is within 15-85
+
 while (age >=  15 and age <= 85):
    age = int(input("(while with and)enter a number between 15 & 85 "))
 
