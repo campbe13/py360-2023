@@ -1,6 +1,5 @@
 # write code to validata user input is within a range
-# pmcampbell
-# 2023-02-20
+# 
 
 age = int(input("enter a number between 15 & 85 "))
 
@@ -13,14 +12,21 @@ if age >=  15 and age <= 85:
 else:
   print(f"age not valid {age}")
 
+# using while & or
+print ("using while & or")
+age = int(input("enter a number between 15 & 85 "))
+
 '''
 validates, only get past the loop if my number is
 within the range 15-85 
 stays inside the loop until within the range
 '''
 while ( age < 15 or age > 85 ):
-  age = int(input("(while)enter a number between 15 & 85 "))
+  age = int(input("(while with or)enter a number between 15 & 85 "))
 
+print(f"age valid {age}")
+# using while & or
+print ("using while & and")
 '''
 validates, only get past the loop if my number is
 NOT within the range 15-85 
@@ -28,6 +34,6 @@ stays inside the loop until OUTSIDE the range
 '''
 
 while (age >=  15 and age <= 85):
-   age = int(input("(while)enter a number between 15 & 85 "))
+   age = int(input("(while with and)enter a number between 15 & 85 "))
 
 print(f"age valid {age}")
