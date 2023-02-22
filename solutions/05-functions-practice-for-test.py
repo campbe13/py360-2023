@@ -136,7 +136,7 @@ print(f'{side1} {side2} {side3} area of triangle {area_triangle2(side1, side2, s
 '''
 calculate the area of a regular polygon
 ref https://www.mathopenref.com/polygonregulararea.html
-parameter number of sides
+parameter length and number of sides
 returns area
 '''
 def area_reg_polygon(side, count):
