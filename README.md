@@ -7,7 +7,7 @@ teaching Introductory Python to Science students
 * [IDE & Python general tips & tricks](TipsandTricks.md)
 * [Functions in Python tips & tricks](TipsandTricksFunctions.md)
 * [Style Guide](PyStyleGuide.md)
-* Correct structure for a python program `__name__`[CodeStructure.md]
+* [Correct structure for a python program `__name__`](CodeStructure.md)
 ---
 You can read the files directly from the git server interface,  you can copy them individually, 
 use the raw format if you do so. 
