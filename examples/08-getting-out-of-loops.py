@@ -1,3 +1,6 @@
+# it is best to structure your code to end a loop properly / naturally 
+# however
+# you can use break and continue to jump out of loops in exceptional circumstances
 '''    
 I want to tell you if the letter 'a' is in a word without using the in operator
 Since this is a function, you can return as soon as you find the answer
