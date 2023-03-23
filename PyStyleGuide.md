@@ -1,14 +1,14 @@
 # Style Guidelines 
-
+Note that when you write code you should think about making your code readable for you or anyone else who has to change it.  Use white space and the following guidlines.  This  is an important aspect of coding.
 ## For variable names and function names 
 ### Rules you must follow or else there will be a syntax error 
-* name must start with a letter (or underscore _do not use underscore this way_)
+* name must start with a letter (or underscore _do not use underscore this way, it is special purpose_)
 * can contain letters, digits , and underscores
-* variable names are case sensitive  (so `Add_tax` and `add_tax` and `Add_Tax` ... would be considered different functions (don't do this on purpose, it would be confusing))
+* function and variable names are case sensitive  (so `Add_tax` and `add_tax` and `Add_Tax` ... would be considered different functions (do not do this on purpose, it would be confusing))
 * cannot be a **reserved** keyword
     * certain words already have a meaning in Python
     * if you tried to use the word as a variable or function name, Python would be confused about what you wanted to do
-    * for example try naming a variable "if"  or "print"  you will create errors
+    * for example try naming a variable "if" or "while" or "print"  you will create errors 
 ### Rules most Python programmers follow, including you!
 [Python.org PEP8 Conventions](https://www.python.org/dev/peps/pep-0008/)
 * PEP8 is the Style Guide for Python Code
@@ -28,8 +28,8 @@ h
 ```
 ## For functions
     
-* All functions must have a docstring comment that explains what they take as parameters, what they do, and what they return
-* Functions should be responsible for one thing only! 
+* All functions must have a docstring comment that explains what they do, what they take as parameters,  and what they return
+* Functions should be responsible for one thing only! (single responsibility)
     * Don't write a function that asks for user input, calculates and prints to screen
     * instead 
       1. ask for user input
@@ -43,8 +43,8 @@ h
 ```python
 ''' 
 add_five: This function adds 5 to the parameter and returns that value
-parameter num: a  number
-returns:  the given number plus 5
+parameter: a  number
+returns: the given number plus 5
 test data:
 5 results in 10
 100 results in 105
