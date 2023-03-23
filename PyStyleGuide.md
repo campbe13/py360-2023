@@ -1,4 +1,4 @@
-# Style Guidelines 
+# Style Guidelines for Python
 Note that when you write code you should think about making your code readable for you or anyone else who has to change it.  Use white space and the following guidlines.  This  is an important aspect of coding.
 ## For variable names and function names 
 ### Rules you must follow or else there will be a syntax error 
