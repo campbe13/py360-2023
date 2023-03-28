@@ -24,7 +24,7 @@ print(type(grades_440))
 sequence = np.arange(6)  # 6 elements 0-5 in my array
 print(sequence)
 
-# just like range() start, stop, skip
+# just like range() start, stop, step
 seq2 = np.arange(2,13,2)
 print(seq2)
 
