@@ -4,7 +4,7 @@ copy & run the code snippets here to see the results for yourself
 
 ## Some gotchas
 Functions are isolated blocks of code designed to be single use
-### they must be defined before they are used
+### functions must be defined before they are used
 ```
 #  Error, the interpreter has not "seen" convert_celsuis when it looks at this line of code
 print(convert_celsius(10)) 
@@ -35,7 +35,7 @@ celsius = convert_celsius(-5.8)
 print(f' -5.8\u00B0F is {celsius}\u00B0C ')
 ```
 
-### parameter values are copies of the argument (cannot change them for the calling program)
+### parameter values are copies of the argument (cannot change them for the calling program) 
 ```
 def func(a,b,c):
   c = abs(c)
