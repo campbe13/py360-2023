@@ -1,4 +1,7 @@
 # Functions
+
+copy & run the code snippets here to see the results for yourself
+
 ## Some gotchas
 Functions are isolated blocks of code designed to be single use
 ### they must be defined before they are used
