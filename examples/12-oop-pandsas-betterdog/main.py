@@ -31,10 +31,7 @@ def buildDog(random_dog):
   
   first_dog = BetterDog(name,breed,size, 0, sex, breedable, colour)
   return first_dog
-
-def main():
-  dogdf = pd.read_csv('dogs2017-wsize.csv')
-
+def dog_stats(dogdf):
   dogdf.info()
   # show the first few rows of the dataframe
   print(dogdf.head())
@@ -71,12 +68,14 @@ def main():
 
   print("only 1", single_breed)
 
+def main():
+  dogdf = pd.read_csv('dogs2017-wsize.csv')
+  dog_stats(dogdf)
+  
   '''
   create some better dog objects
   first extract some data
   '''
-
-
   list_of_dogs = []
   for i in range(5):
     random_dog = dogdf.sample()
