@@ -43,7 +43,7 @@ class Terrier(Dog):
     self.size = 'small'
   # override bark
   def bark(self):
-      return 'Terrer yip yip yip'
+    return f '{self.breed} yip yip yip'
   # own methods (not in Dog / parent class)
   def trouble(self):
     if self.age < 5:
