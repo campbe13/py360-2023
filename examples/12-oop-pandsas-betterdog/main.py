@@ -10,21 +10,21 @@ BetterDog attributes on instantiation
 name,  breed, size, age, sex, breedable, colour
 '''
 def buildDog(random_dog):
-  colour = random_dog.iloc[0].Color
-  name = random_dog.iloc[0].DogName
-  breed = random_dog.iloc[0].Breed
-  size = random_dog.iloc[0].Size
+  colour = random_dog.Color
+  name = random_dog.DogName
+  breed = random_dog.Breed
+  size = random_dog.Size
   sex = ''
   breedable = False
-  if 'female' in random_dog.iloc[0].LicenseType.lower():
+  if 'female' in random_dog.LicenseType.lower():
     sex = 'female'
-    if 'spayed' in random_dog.iloc[0].LicenseType.lower():
+    if 'spayed' in random_dog.LicenseType.lower():
       breedable = False
     else:
       breedable = True
-  elif 'male' in random_dog.iloc[0].LicenseType.lower():
+  elif 'male' in random_dog.LicenseType.lower():
     sex = 'male'
-    if 'neutered' in random_dog.iloc[0].LicenseType.lower():
+    if 'neutered' in random_dog.LicenseType.lower():
       breedable = False
     else:
       breedable = True
@@ -48,12 +48,9 @@ def dog_stats(dogdf):
   print("most common name")
   print("name", dogdf.DogName.value_counts().max())
   print("name",  dogdf.DogName.value_counts().idxmax())  # not an index because data is string
-  ### which is least most common name
-  print("least common", dogdf.Breed.value_counts().min())
-  print("least common",  dogdf['Breed'].value_counts().idxmin())
-
-  print("least common", len(least_common))
-  print("least common breed name", least_common)
+  ### which is least common name
+  print("least common", dogdf.DogName.value_counts().min())
+  print("least common",  dogdf['DogName'].value_counts().idxmin())
 
   breed_series = dogdf.Breed.value_counts() 
   # go throught the series  & show breeds with only 1 
@@ -69,7 +66,7 @@ def dog_stats(dogdf):
   print("only 1", single_breed)
 
 def main():
-  dogdf = pd.read_csv('dogs2017-wsize.csv')
+  dogdf = pd.read_csv('dogs2017.csv')
   dog_stats(dogdf)
   
   '''
@@ -78,13 +75,13 @@ def main():
   '''
   list_of_dogs = []
   for i in range(5):
-    random_dog = dogdf.sample()
+    #random_dog = dogdf.sample() # need ref iloc[0] on random_dog
+    random_dog = dogdf.sample().reset_index().iloc[0]
     adog = buildDog(random_dog)
     list_of_dogs.append(adog)
 
   for dog in list_of_dogs:
-    print(dog.bark())
-    print(dog.dogInfo())
+    print(dog, dog.bark())
 
 if __name__ == '__main__':
   main()
