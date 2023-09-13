@@ -13,7 +13,7 @@ def convert_celsius(fahr):
     celsius = (fahr-32) *5/9
     return celsius
 ```
-### variables inside a function are not available outside
+### variables inside a function are not available outside this is called `scope` 
 ```
 #  Error, the interpreter doesn't know what convert_celsuis when it looks at this line of code​
 print(convert_celsius(10)) 
