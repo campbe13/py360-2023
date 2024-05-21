@@ -14,7 +14,7 @@ use the raw format if you do so.
 
 Or you can download everything, on the main page there is a button to download as a zip file: ![image](https://user-images.githubusercontent.com/1751207/149207755-39ce3c9e-033b-4309-8014-55cf0588ed05.png)
 
-Thanks to J. Nilakantan and A. Bodzay (and other generous faculty for content)
+Thanks to J. Nilakantan and A. Bodzay (and other generous faculty) for content
 
 ## Dev set up
 ### use repl.it
